@@ -1,0 +1,45 @@
+
+
+.container {
+    text-align: center;
+}
+
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: green;
+}
+.start-button:hover {
+    background-color: rgba(00, 128, 00, 0.8);
+}
+
+.pause-button {
+    background-color: grey;
+}
+.pause-button:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.stop-button {
+    background-color: rgb(220, 0, 0);
+}
+.stop-button:hover {
+    background-color: rgba(220, 0, 0, 0.8);
+}
+
