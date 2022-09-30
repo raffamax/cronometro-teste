@@ -2,7 +2,7 @@ var ms = 0
 var sec = 0
 var min = 0
 var hour = 0
-var interval;
+var interval= 0;
 
 function twodigits(digit) {
     if(digit < 10){
@@ -11,7 +11,9 @@ function twodigits(digit) {
 }
 
 function start() {
+    if (ms == 0) {
     interval = setInterval(cronos, 10)
+    }
 }
 
 function pause() {
@@ -24,12 +26,12 @@ function stop() {
     sec = 0
     min = 0
     hour = 0
-    document.getElementById('time').innerText = '00:00:00:00'
+    document.getElementById('time').innerText = twodigits(hour)+':'+twodigits(min)+':'+twodigits(sec)+':'+twodigits(ms)
 
 }
 
 function cronos() {
-    ms++
+        ms++
     if(ms==100){
         sec++
         ms = 0
@@ -44,4 +46,5 @@ function cronos() {
         ms = 0
     }
     document.getElementById('time').innerText = twodigits(hour)+':'+twodigits(min)+':'+twodigits(sec)+':'+twodigits(ms)
+
 }
