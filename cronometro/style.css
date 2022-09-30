@@ -1,12 +1,23 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .container {
+    width: 60vw;
+    height: 16vh;
+    background-image: linear-gradient(rgb(100, 100, 100),black, black);
     text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 20px;
 }
 
 
-h1{
+h1 {
+    padding: 20px;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
 button {
@@ -26,20 +37,20 @@ button:hover {
     background-color: green;
 }
 .start-button:hover {
-    background-color: rgba(00, 128, 00, 0.8);
+    background-color: rgba(00, 200, 00, 0.8);
 }
 
 .pause-button {
     background-color: grey;
 }
 .pause-button:hover {
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(200, 200, 200, 0.8);
 }
 
 .stop-button {
-    background-color: rgb(220, 0, 0);
+    background-color: rgb(200, 0, 0);
 }
 .stop-button:hover {
-    background-color: rgba(220, 0, 0, 0.8);
+    background-color: rgba(255, 0, 0, 1);
 }
 

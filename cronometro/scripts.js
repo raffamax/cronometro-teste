@@ -11,7 +11,7 @@ function twodigits(digit) {
 }
 
 function start() {
-    if (ms == 0) {
+    if (ms == 0 && sec == 0 && min == 0 && hour == 0) {
     interval = setInterval(cronos, 10)
     }
 }
